@@ -7,6 +7,22 @@ export const Table = styled.table`
     box-shadow: 0px 0px 5px #CCC;
     border-radius: 10px;
     margin-top: 20px;
+
+    @media(max-width: 800px) {
+        margin-top: -40;
+        margin-right: 10px;
+        margin-left: 10px;        
+      }
+
+      @media(max-width: 500px) {
+        width: 450px;
+        flex-wrap: wrap;
+        margin-right: 15px     
+      }
+
+      @media(max-width: 200px) {
+        width: 100%     
+      }
 `;
 
 export const TableHeadCollumn = styled.th<{ width?: number}>`

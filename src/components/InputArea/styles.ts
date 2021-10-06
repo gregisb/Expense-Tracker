@@ -8,6 +8,22 @@ export const Container = styled.div`
     margin-top: 20px;
     display: flex;
     align-items: center;
+
+    @media(max-width: 800px) {
+        margin-top: -40;
+        margin-right: 10px;
+        margin-left: 10px;        
+      }
+
+      @media(max-width: 500px) {
+        width: 418px;
+        flex-wrap: wrap;
+        margin-right: 15px     
+      }
+
+      @media(max-width: 200px) {
+        width: 100%     
+      }
 `;
 export const InputLabel = styled.label`
     flex: 1;

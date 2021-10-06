@@ -9,6 +9,22 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
 
+    @media(max-width: 800px) {
+        margin-top: -40;
+        margin-right: 10px;
+        margin-left: 10px;        
+      }
+
+      @media(max-width: 500px) {
+        width: 420px;
+        flex-wrap: wrap;
+        margin-right: 120px     
+      }
+
+      @media(max-width: 200px) {
+        width: 100%      
+      }
+
 `;
 
 export const MonthArea = styled.div`
