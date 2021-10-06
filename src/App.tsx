@@ -15,7 +15,7 @@ import { InfoArea } from './components/InfoArea';
 import { InputArea } from './components/InputArea';
 
 const App = () => {
-  const [list, setLists] = useState(items);
+  const [list, setList] = useState(items);
   const [filteredList, setFilteredList] = useState<Item[]>([]);
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
   const [income, setIncome] = useState(0);
@@ -45,7 +45,13 @@ const App = () => {
 
   const handleMonthChange = (newMonth: string) => {
     setCurrentMonth(newMonth);
-  }
+  };
+
+  const handleAddItem = (item: Item) => {
+    let newList = [...list];
+    newList.push(item);
+    setList(newList)
+  };
 
   return (
     <C.Container>
