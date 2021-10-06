@@ -11,15 +11,20 @@ import { categories } from './data/categories';
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter';
 
 import { TableArea } from './components/TableArea'
+import { InfoArea } from './components/InfoArea';
 
 const App = () => {
   const [list, setLists] = useState(items);
   const [filteredList, setFilteredList] = useState<Item[]>([]);
-  const [currentMonth, setCurrentMotnh] = useState(getCurrentMonth());
+  const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
 
   useEffect(()=> {
     setFilteredList(filterListByMonth(list, currentMonth))
-  }, [list, currentMonth])
+  }, [list, currentMonth]);
+
+  const handleMonthChange = (newMonth: string) => {
+    setCurrentMonth(newMonth);
+  }
 
   return (
     <C.Container>
@@ -27,7 +32,10 @@ const App = () => {
         <C.HeaderText>Sitemas Financeiro</C.HeaderText>
       </C.Header>
       <C.Body>
-          {/* Area de informaçoes */}
+          <InfoArea 
+                currentMonth={currentMonth}
+                onMonthChange={handleMonthChange}
+          />
 
           {/* Area de inserção das informções  */}
 
