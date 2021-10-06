@@ -12,6 +12,7 @@ import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter';
 
 import { TableArea } from './components/TableArea'
 import { InfoArea } from './components/InfoArea';
+import { InputArea } from './components/InputArea';
 
 const App = () => {
   const [list, setLists] = useState(items);
@@ -59,7 +60,7 @@ const App = () => {
                 expense={expense}
           />
 
-          {/* Area de inserção das informções  */}
+          <InputArea onAdd={handleAddItem}/>
 
           <TableArea list={filteredList}/>
         </C.Body>
