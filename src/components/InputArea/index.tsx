@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import * as C from './styles';
 import { Item } from '../../types/Item';
 
@@ -43,8 +43,9 @@ export const InputArea = ({ onAdd }: Props) => {
       });
       clearFields();
     }
-  }
+  };
 
+  
   const clearFields = () => {
     setDateField('');
     setCategoryField('');

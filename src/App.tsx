@@ -15,6 +15,7 @@ import { InfoArea } from './components/InfoArea';
 import { InputArea } from './components/InputArea';
 
 const App = () => {
+  
   const [list, setList] = useState(items);
   const [filteredList, setFilteredList] = useState<Item[]>([]);
   const [currentMonth, setCurrentMonth] = useState(getCurrentMonth());
@@ -41,8 +42,9 @@ const App = () => {
     setIncome(incomeCount);
     setExpense(expenseCount);
 
-  }, [filteredList])
+  }, [filteredList]);
 
+ 
   const handleMonthChange = (newMonth: string) => {
     setCurrentMonth(newMonth);
   };
@@ -56,7 +58,7 @@ const App = () => {
   return (
     <C.Container>
       <C.Header>
-        <C.HeaderText>Sitemas Financeiro</C.HeaderText>
+        <C.HeaderText>Financial Manager</C.HeaderText>
       </C.Header>
       <C.Body>
           <InfoArea 

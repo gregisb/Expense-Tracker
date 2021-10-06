@@ -37,11 +37,11 @@ export const Button = styled.button`
     padding: 0 5px;
     border: 1px solid lightblue;
     border-radius: 5px;
-    background-color: lightblue;
-    color: black;
+    background-color: #004358;
+    color: white;
     cursor: pointer;
     &:hover {
-        background-color: blue;
+        background-color: rgba(0, 67, 88, .7);
         color: white;
     }
 `;
