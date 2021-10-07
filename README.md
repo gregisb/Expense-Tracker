@@ -1,22 +1,22 @@
 <img src="https://github.com/gregisb/Expense-Tracker/blob/main/public/expenseTracker.png?raw=true" />
 
-### Gerenciador de Finanças
+# Gerenciador de Finanças
 
 Projeto desenvolvido em React com TypeScript, onde o usuário pode fornecer informações sobre entrada e saída de suas finanças para organização. O usuário pode cadastrar cada finança informando a data, a categoria (entrada ou saída), o título e o valor. O sistema fará um cálculo, mostrando a a receita e a despesa total e o balanço das duas. A consulta pode ser feita por mês através dos botões de navegação, em que o usuário pode ter acesso aos dados de cada período.
 
 
-# Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - React
 - TypeScript
 - styled-components
 
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Available Scripts
 
 In the project directory, you can run:
 
