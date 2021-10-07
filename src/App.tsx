@@ -58,7 +58,7 @@ const App = () => {
   return (
     <C.Container>
       <C.Header>
-        <C.HeaderText>Financial Manager</C.HeaderText>
+        <C.HeaderText>Gerenciador de Finanças</C.HeaderText>
       </C.Header>
       <C.Body>
           <InfoArea 

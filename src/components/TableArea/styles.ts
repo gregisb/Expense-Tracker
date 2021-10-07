@@ -7,6 +7,8 @@ export const Table = styled.table`
     box-shadow: 0px 0px 5px #CCC;
     border-radius: 10px;
     margin-top: 20px;
+    font-family: 'Montserrat', sans-serif
+
 
     @media(max-width: 800px) {
         margin-top: -40;
@@ -29,5 +31,7 @@ export const TableHeadCollumn = styled.th<{ width?: number}>`
     width: ${props => props.width ? `${props.width}px` : 'auto'}
     padding: 10px 0;
     text-align: left;
+    font-family: 'Montserrat', sans-serif
+
 
 `;
