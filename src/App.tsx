@@ -15,6 +15,8 @@ import { InfoArea } from './components/InfoArea';
 import { InputArea } from './components/InputArea';
 
 const App = () => {
+  const LOCAL_STORAGE_KEY = 'expenses list'
+
   
   const [list, setList] = useState(items);
   const [filteredList, setFilteredList] = useState<Item[]>([]);
@@ -54,6 +56,19 @@ const App = () => {
     newList.push(item);
     setList(newList)
   };
+
+  //LOCALSTORAGE - AQUI?
+
+  // useEffect(() => {
+  //   const retrieveList = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
+  //   if(retrieveList) {
+  //     setList(retrieveList);
+  //      }
+  //   }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(list))
+  // }, [list]);
 
   return (
     <C.Container>
